@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Porto Auto Services</title>
   <link rel="stylesheet" href="main.css">
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js"></script>
+  
+  <script src="main.js" defer></script>
 </head>
 
 <body>
@@ -110,13 +115,13 @@
 
       <form>
         <label for="input-nome">Nome:</label>
-        <input type="text" name="nome" id="input-nome">
+        <input required type="text" name="nome" id="input-nome">
 
         <label for="input-email">E-mail</label>
-        <input type="email" name="email" id="input-email">
+        <input required type="email" name="email" id="input-email">
 
         <label for="input-mensagem">Mensagem:</label>
-        <textarea name="mensagem" id="input-mensagem" cols="30" rows="10"></textarea>
+        <textarea required name="mensagem" id="input-mensagem" cols="30" rows="10"></textarea>
 
         <button type="submit">Enviar</button>
       </form>

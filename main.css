@@ -30,6 +30,10 @@ nav a {
   color: var(--blue);
 }
 
+nav a:hover {
+  color: var(--yellow);
+}
+
 h2 {
   font-size: 2rem;
 }
@@ -144,6 +148,18 @@ footer {
   border-radius: 1.5rem;
 }
 
+.services-images-container div {
+  transition: transform .2s ease-in;
+}
+
+.services-images-container div:hover {
+  transform: scale(110%);
+}
+
+.services-images-container div img:hover {
+  border: 4px solid var(--blue);
+}
+
 .contact-section {
   background-color: var(--blue);
   color: var(--white)
@@ -198,4 +214,23 @@ footer {
 
 .footer-links a {
   color: white;
+}
+
+section {
+  opacity: 0;
+}
+
+.fade-in {
+  animation: fade-in-animation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in-animation {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
